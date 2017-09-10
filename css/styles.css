@@ -8,8 +8,9 @@ Elements
 
 body {
 	max-width: 1200px;
+	padding: 2%;
     margin: auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 img, embed, object, video {
@@ -32,10 +33,17 @@ hr {
 	margin-bottom: 30px;
 }
 
+i {
+	margin: auto;
+}
+
+footer {
+	margin-top: 30px;
+}
+
 /*
 Text styles
 */
-
 
 .center-text {
 	text-align: center;
@@ -58,10 +66,9 @@ Text styles
 	font-weight: bold;
 }
 
-
 /*
 Layout
-*/	
+*/
 
 .container {
 	width:100%;
@@ -78,18 +85,6 @@ Layout
 }
 
 /*
-Responsive Images
-*/
-
-.image-tablet {
-	display: none;
-}
-
-.image-phone {
-	display: none;
-}
-
-/*
 @media
 */
 
@@ -97,21 +92,12 @@ Responsive Images
 @media screen and (min-width: 768px) and (max-width: 900px) {
 
 	body {
-		margin: 2%;
 		max-width: 100%;
 	}
 
 	article.center {
 		margin: 0px;
 		margin-left: auto;
-	}
-
-	.image-desktop {
-		display: none;
-	}
-
-	.image-tablet {
-		display: block;
 	}
 
 	#logo {
@@ -128,7 +114,23 @@ Responsive Images
 
 	body {
 		max-width: 100%;
-		margin: 2%;
+	}
+
+	img {
+		margin: auto;
+	}
+
+	article {
+		margin-left: 0px;
+		margin: auto;
+	}
+}
+
+/* Small Phone */
+@media screen and (max-width: 360px) {
+
+	body {
+		max-width: 100%;
 	}
 
 	img {
@@ -140,19 +142,10 @@ Responsive Images
 		margin: auto;
 	}
 
-	.image-desktop {
-		display: none;
-	}
-
-	.image-tablet {
-		display: none;
-	}
-
-	.image-phone {
-		display: block;
+	#name {
+		font-size: 40px !important;
 	}
 }
-
 
 /*
 Colors
@@ -169,7 +162,6 @@ Colors
 .light-blue {
 	color: #02b3e4;
 }
-
 
 /*
 id's

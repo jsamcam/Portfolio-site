@@ -1,16 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title>Portfolio Site</title>
+	<title>
+		Portfolio Site
+	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/styles.css">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,100" rel="stylesheet">
+	<script src="https://use.fontawesome.com/ac057686ee.js">
+	</script>
 </head>
 	<body>
 		<header class="container">
 			<div class="left">
-			<img id="logo" src='https://d125fmws0bore1.cloudfront.net/assets/logo/logo-mark-4bfb321aaa8c5a67d777bdf90289552f0a914f93b34ee47c2af462ee015077f8.svg' alt="Udacity Logo">
+			<img id="logo" src="https://d125fmws0bore1.cloudfront.net/assets/logo/logo-mark-4bfb321aaa8c5a67d777bdf90289552f0a914f93b34ee47c2af462ee015077f8.svg" alt="Udacity Logo">
 			</div>
 			<div class="right">
 				<h1 id="name" class="right-text">
@@ -22,50 +26,58 @@
 			</div>
 		</header>
 		<hr>
-		<section>
-			<img src='http://via.placeholder.com/1200x400' alt="FPO Image" class="center image-desktop">
-			<img src='http://via.placeholder.com/730x300.png' alt="FPO Image" class="center image-tablet">
-			<img src='http://via.placeholder.com/300x300.png' alt="FPO Image" class="center image-phone">
-		</section>    
-		<section>
+			<picture class="container">
+				<source srcset="http://via.placeholder.com/1200x400 1200w" media="(min-width: 1200px)" sizes="100vw"/>
+				<source srcset="http://via.placeholder.com/730x300 730w" media="(min-width: 768px)" sizes="95vw"/>
+				<img class="center" src="http://via.placeholder.com/300x300.png" alt="FPO Image"/>
+			</picture>
+		<main>
 			<h2 class="grey left-margin-text medium-text">
 				FEATURED WORK
 			</h2>
 			<div class="container">
 				<article class="left">
-					<img src='http://via.placeholder.com/300x300.png' alt="FPO Image">
+					<img src="http://via.placeholder.com/300x300.png" alt="FPO Image">
 					<h2 class="center-text black">
 						TITLE 1
 					</h2>
 					<h3 class="center-text small-text black">
-						<a href='https://www.xkcd.com'>
+						<a href="https://www.xkcd.com" target="_blank">
 							https://www.xkcd.com
 						</a>
 					</h3>
 				</article>
 				<article class="center">
-					<img src='http://via.placeholder.com/300x300.png' alt="FPO Image">
+					<img src="http://via.placeholder.com/300x300.png" alt="FPO Image">
 					<h2 class="center-text black">
 						TITLE 2
 					</h2>
 					<h3 class="center-text small-text black">
-						<a href='https://www.xkcd.com'>
+						<a href="https://www.xkcd.com" target="_blank">
 							https://www.xkcd.com
 						</a>
 					</h3>
 				</article>
 				<article>
-					<img src='http://via.placeholder.com/300x300.png' alt="FPO Image">
+					<img src="http://via.placeholder.com/300x300.png" alt="FPO Image">
 					<h2 class="center-text black">
 						TITLE 3
 					</h2>
 					<h3 class="center-text small-text black">
-						<a href='https://www.xkcd.com'>
+						<a href="https://www.xkcd.com" target="_blank">
 							https://www.xkcd.com
 						</a>
 					</h3>
 				</article>
 			</div>
-		</section>
+		</main>
+		<footer class="container">
+			<i class="grey fa fa-linkedin-square fa-3x" aria-hidden="true">
+			</i>
+			<i class="grey fa fa-google-plus-official fa-3x" aria-hidden="true">
+			</i>
+			<i class="grey fa fa-github-square fa-3x" aria-hidden="true">
+			</i>
+		</footer>
 	</body>
 </html>
